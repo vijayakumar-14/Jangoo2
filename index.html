@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreams, Decoded — The Science Behind Your Sleeping Brain</title>
+  <meta name="description" content="A simple, welcoming guide to what your sleeping brain is doing. Explore sleep stages, REM vs. NREM dreams, leading neuroscience theories, and common myths.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessible Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#top" class="brand" aria-label="Dreams, Decoded Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.4" />
+          <path d="M18.5 6A10.5 10.5 0 1 0 26 21.5 12 12 0 0 1 18.5 6z" fill="url(#brandGlow)" />
+          <defs>
+            <linearGradient id="brandGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#a78bfa" />
+              <stop offset="100%" stop-color="#38bdf8" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-text">Dreams, Decoded</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="primaryNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#what-is-a-dream" class="nav-link">What Is a Dream?</a></li>
+          <li><a href="#sleep-stages" class="nav-link">Sleep Stages</a></li>
+          <li><a href="#why-we-dream" class="nav-link">Why We Dream</a></li>
+          <li><a href="#myths-and-facts" class="nav-link">Myths &amp; Facts</a></li>
+          <li><a href="#interactive-quiz" class="nav-link">Quiz</a></li>
+          <li><a href="#takeaways" class="nav-link">Quick Recap</a></li>
+          <li><a href="#sources" class="nav-link">Sources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-bg-nebula" aria-hidden="true"></div>
+      <div class="hero-stars" aria-hidden="true"></div>
+      <div class="content-container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot"></span>
+            <span>Sleep Neuroscience Explained</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">Dreams, Decoded</h1>
+          <p class="hero-subtitle">A simple guide to what your sleeping brain is doing.</p>
+          <p class="hero-description">
+            Every night while your body rests, your brain enters an extraordinary, highly active state—weaving vivid stories, reorganizing memories, and testing emotions. Step into the calm science of sleep.
+          </p>
+          <div class="hero-actions">
+            <a href="#what-is-a-dream" class="btn btn-primary">
+              <span>Explore the Science</span>
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M10 4v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#interactive-quiz" class="btn btn-secondary">
+              <span>Test Your Knowledge</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <!-- Inline SVG illustration of sleeping brain, moon, and synapsing waves -->
+            <svg class="hero-svg" viewBox="0 0 400 360" width="100%" height="auto" role="img" aria-label="Stylized diagram of a dreaming brain with glowing neural synapses beneath a crescent moon">
+              <defs>
+                <linearGradient id="crescentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fde047" stop-opacity="0.9" />
+                  <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.6" />
+                </linearGradient>
+                <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.6" />
+                  <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.3" />
+                </linearGradient>
+                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="8" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <!-- Ambient Glow Rings -->
+              <circle cx="200" cy="180" r="140" fill="url(#brainGrad)" opacity="0.12" filter="url(#glow)"/>
+              <circle cx="200" cy="180" r="100" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 6" opacity="0.25"/>
+
+              <!-- Stars in Sky -->
+              <circle cx="70" cy="60" r="1.5" fill="#f8fafc" opacity="0.8"/>
+              <circle cx="110" cy="90" r="1" fill="#f8fafc" opacity="0.6"/>
+              <circle cx="320" cy="70" r="1.5" fill="#fde047" opacity="0.7"/>
+              <circle cx="340" cy="130" r="1" fill="#f8fafc" opacity="0.5"/>
+              <circle cx="50" cy="200" r="1" fill="#f8fafc" opacity="0.4"/>
+              <circle cx="330" cy="260" r="1.5" fill="#f8fafc" opacity="0.6"/>
+
+              <!-- Crescent Moon -->
+              <path d="M290,50 A26,26 0 1 0 320,86 A20,20 0 0 1 290,50 Z" fill="url(#crescentGrad)" filter="url(#glow)"/>
+
+              <!-- Stylized Brain Contour -->
+              <path d="M 140 190 
+                       C 130 160, 140 120, 170 100 
+                       C 195 85, 230 85, 255 105 
+                       C 275 120, 280 150, 275 175 
+                       C 285 190, 280 220, 260 235 
+                       C 245 245, 220 245, 205 240 
+                       C 185 248, 160 245, 145 230 
+                       C 130 215, 135 198, 140 190 Z" 
+                    fill="url(#brainGrad)" stroke="#c084fc" stroke-width="1.8" opacity="0.85"/>
+
+              <!-- Neural Pathways & Synaptic Nodes -->
+              <g stroke="#38bdf8" stroke-width="1.2" opacity="0.75" fill="none">
+                <path d="M 160 140 Q 180 130 200 150 T 240 140" />
+                <path d="M 170 170 Q 200 160 220 185 T 260 175" />
+                <path d="M 180 200 Q 205 210 230 195 T 250 220" />
+                <path d="M 200 120 V 220" stroke-dasharray="2 3" opacity="0.4"/>
+              </g>
+
+              <!-- Synapse Node Lights -->
+              <circle cx="160" cy="140" r="3.5" fill="#67e8f9" filter="url(#glow)"/>
+              <circle cx="200" cy="150" r="4.5" fill="#fde047" filter="url(#glow)"/>
+              <circle cx="240" cy="140" r="3.5" fill="#c084fc" filter="url(#glow)"/>
+              <circle cx="170" cy="170" r="3" fill="#67e8f9"/>
+              <circle cx="220" cy="185" r="4" fill="#38bdf8" filter="url(#glow)"/>
+              <circle cx="260" cy="175" r="3.5" fill="#fde047"/>
+              <circle cx="180" cy="200" r="3" fill="#c084fc"/>
+              <circle cx="230" cy="195" r="3.5" fill="#67e8f9"/>
+              <circle cx="250" cy="220" r="3" fill="#38bdf8"/>
+
+              <!-- Brainwave Ripple at base -->
+              <path d="M 100 290 Q 125 275 150 290 T 200 290 T 250 290 T 300 290" 
+                    fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.8"/>
+              <path d="M 120 310 Q 140 300 160 310 T 200 310 T 240 310 T 280 310" 
+                    fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.5"/>
+
+              <text x="200" y="340" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" letter-spacing="1.5">
+                NEURAL RHYTHMS IN SLEEP
+              </text>
+            </svg>
+            <div class="visual-caption">
+              <span class="caption-tag">Active Mind</span>
+              <span>During sleep, brain activity shifts between calm restoration and vivid neural simulation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: What is a Dream? -->
+    <section id="what-is-a-dream" class="content-section" aria-labelledby="heading-what-is">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Foundations of Sleep</span>
+          <h2 id="heading-what-is" class="section-title">What Is a Dream?</h2>
+          <p class="section-intro">
+            A dream is not an illusion or a random glitch. It is a structured, subjective experience created from inside your own nervous system.
+          </p>
+        </header>
+
+        <div class="grid-2-col">
+          <article class="card card-glow">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Subjective Mental Experience</h3>
+            <p>
+              In neuroscience, a <strong>dream</strong> is defined as a series of thoughts, images, sensations, and emotions that occur involuntarily in the mind during sleep. You can see scenes, hear voices, feel joy or fear, and even taste or touch things that are not physically present.
+            </p>
+            <p>
+              Because your external senses are largely shielded during sleep—a biological process known as <em>sensory gating</em>—your brain constructs this entire sensory reality out of stored memories, recent daytime impressions, and internal neural signals.
+            </p>
+          </article>
+
+          <article class="card card-glow">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Sleep Is Not a Shutdown</h3>
+            <p>
+              For centuries, people believed sleep was a passive blackout where the brain powered down like a lamp. Modern brain scans (like EEG and fMRI) prove the exact opposite: <strong>sleep is an active, highly orchestrated biological state</strong>.
+            </p>
+            <p>
+              While you rest, your brain carries out critical biological chores: repairing cellular damage, clearing metabolic waste through the <em>glymphatic system</em>, reinforcing healthy neural pathways, and replaying important moments from your day.
+            </p>
+          </article>
+        </div>
+
+        <!-- Highlight Callout: Why Dreams Feel So Real -->
+        <div class="callout-box">
+          <div class="callout-icon" aria-hidden="true">💡</div>
+          <div class="callout-content">
+            <h4 class="callout-title">Why do bizarre dreams feel completely real while they happen?</h4>
+            <p>
+              During vivid dreaming, your emotional hubs (like the <strong>amygdala</strong>) and sensory association areas are intensely active. Meanwhile, the <strong>dorsolateral prefrontal cortex</strong>—the brain region in charge of strict logic, self-reflection, and reality checking—dials down its activity. Without your waking "logic filter," your brain accepts flying fish, sudden location shifts, or talking animals as entirely normal until the moment you wake up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Sleep Stages (REM and NREM) -->
+    <section id="sleep-stages" class="content-section alt-bg" aria-labelledby="heading-stages">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Brain Architecture</span>
+          <h2 id="heading-stages" class="section-title">What Happens While We Sleep?</h2>
+          <p class="section-intro">
+            Sleep is not a single flat line. Throughout the night, you cycle through distinct phases—each with its own brainwave frequency, physical state, and dreaming style.
+          </p>
+        </header>
+
+        <!-- Sleep Cycle Visual Diagram -->
+        <div class="sleep-architecture-diagram" aria-label="Sleep cycle progression diagram">
+          <div class="diagram-header">
+            <h3 class="diagram-title">The 90-Minute Sleep Cycle</h3>
+            <p class="diagram-subtitle">Your brain repeats this 4 to 6 times per night, with REM stages growing longer toward morning.</p>
+          </div>
+          
+          <div class="cycle-track" role="list">
+            <div class="cycle-step" role="listitem">
+              <span class="step-num">Stage 1</span>
+              <span class="step-name">N1 (Light)</span>
+              <span class="step-desc">Drifting off, theta waves, sudden muscle twitches</span>
+            </div>
+            <div class="cycle-arrow" aria-hidden="true">→</div>
+            <div class="cycle-step" role="listitem">
+              <span class="step-num">Stage 2</span>
+              <span class="step-name">N2 (Spindles)</span>
+              <span class="step-desc">Heart rate slows, memory-protecting sleep spindles</span>
+            </div>
+            <div class="cycle-arrow" aria-hidden="true">→</div>
+            <div class="cycle-step" role="listitem">
+              <span class="step-num">Stage 3</span>
+              <span class="step-name">N3 (Deep)</span>
+              <span class="step-desc">Delta waves, physical tissue repair, immune support</span>
+            </div>
+            <div class="cycle-arrow" aria-hidden="true">→</div>
+            <div class="cycle-step cycle-step-highlight" role="listitem">
+              <span class="step-num">Stage 4</span>
+              <span class="step-name">REM Sleep</span>
+              <span class="step-desc">Fast brainwaves, rapid eye movements, vivid stories</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- REM vs NREM Comparison Cards -->
+        <div class="stage-comparison-grid">
+          <article class="stage-card nrem-card">
+            <div class="stage-badge">NREM Stages (N1, N2, N3)</div>
+            <h3 class="stage-title">Non-REM Sleep: Restoration &amp; Quiet Thought</h3>
+            <p class="stage-lead">
+              Non-REM accounts for roughly 75% to 80% of your total sleep time each night.
+            </p>
+            <ul class="stage-features">
+              <li>
+                <strong>Brain Activity:</strong> Brainwaves slow down into synchronized rhythms, culminating in the deep, rolling <em>delta waves</em> of Stage N3.
+              </li>
+              <li>
+                <strong>Body State:</strong> Muscles remain relaxed but capable of subtle movement. Heart rate, blood pressure, and core temperature decrease.
+              </li>
+              <li>
+                <strong>Dreams Can Happen Here:</strong> Yes! People often assume dreaming only occurs in REM. Research shows that 30% to 50% of awakenings from NREM yield dream reports. However, NREM dreams are usually more <em>thought-like, conceptual, or brief</em>—like reflecting on a work problem or replaying a simple conversation.
+              </li>
+            </ul>
+          </article>
+
+          <article class="stage-card rem-card">
+            <div class="stage-badge rem-badge">REM Stage</div>
+            <h3 class="stage-title">REM Sleep: The Vivid Neural Theater</h3>
+            <p class="stage-lead">
+              Rapid Eye Movement sleep makes up roughly 20% to 25% of adult sleep, lengthening in the second half of the night.
+            </p>
+            <ul class="stage-features">
+              <li>
+                <strong>Brain Activity:</strong> High-frequency, desynchronized waves look remarkably similar to awake, alert consciousness. Oxygen and glucose use spike.
+              </li>
+              <li>
+                <strong>Muscle Atonia (Temporary Paralysis):</strong> To protect you from physically acting out intense dream scenarios, neurons in the brainstem temporarily inhibit motor neurons, keeping voluntary muscles still.
+              </li>
+              <li>
+                <strong>Vivid, Cinematic Dreams:</strong> REM hosts the most immersive, emotionally charged, narrative-driven dreams. Characters, colors, complex plots, and sudden emotional shifts are hallmark features of REM.
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Interactive Sleep Stage Explorer -->
+        <div class="interactive-stage-explorer" id="stageExplorer">
+          <h3 class="explorer-title">Interactive Stage Explorer: Compare the Brain at Rest</h3>
+          <p class="explorer-subtitle">Select any stage below to inspect brainwaves, bodily state, and how dreams manifest:</p>
+
+          <div class="stage-tabs" role="tablist" aria-label="Sleep Stage Selector">
+            <button class="stage-tab active" role="tab" id="tab-rem" aria-selected="true" aria-controls="panel-rem" data-stage="rem">
+              REM Sleep
+            </button>
+            <button class="stage-tab" role="tab" id="tab-n1" aria-selected="false" aria-controls="panel-n1" data-stage="n1">
+              N1 (Light Transition)
+            </button>
+            <button class="stage-tab" role="tab" id="tab-n2" aria-selected="false" aria-controls="panel-n2" data-stage="n2">
+              N2 (True Light Sleep)
+            </button>
+            <button class="stage-tab" role="tab" id="tab-n3" aria-selected="false" aria-controls="panel-n3" data-stage="n3">
+              N3 (Slow-Wave Deep)
+            </button>
+          </div>
+
+          <!-- Dynamic Panel for Explorer -->
+          <div class="explorer-display" id="explorerDisplay" role="tabpanel" aria-labelledby="tab-rem">
+            <div class="explorer-grid">
+              <div class="explorer-col">
+                <span class="panel-meta-tag" id="stageWaveTag">Brain Wave: Fast, Desynchronized (Beta / Sawtooth)</span>
+                <h4 class="panel-stage-name" id="stageName">Rapid Eye Movement (REM)</h4>
+                <p id="stageSummary" class="panel-summary">
+                  Brain metabolism matches or exceeds waking levels. Emotional and visual centers burn bright while voluntary muscles are held motionless.
+                </p>
+                <div class="panel-metric">
+                  <span class="metric-label">Dream Type:</span>
+                  <span class="metric-value" id="stageDreamType">Cinematic, narrative, emotionally intense, vivid imagery</span>
+                </div>
+                <div class="panel-metric">
+                  <span class="metric-label">Muscle State:</span>
+                  <span class="metric-value" id="stageMuscleState">Atonia (temporary motor paralysis for safety)</span>
+                </div>
+              </div>
+
+              <div class="explorer-visual" aria-hidden="true">
+                <div class="wave-graphic-container">
+                  <div class="wave-label">Simulated Brainwave Rhythm</div>
+                  <svg id="stageWaveSvg" viewBox="0 0 300 80" width="100%" height="80" class="wave-svg">
+                    <path id="stageWavePath" d="M0 40 Q 15 20, 30 40 T 60 40 T 90 40 T 120 40 T 150 40 T 180 40 T 210 40 T 240 40 T 270 40 T 300 40" 
+                          fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+                  </svg>
+                  <span class="wave-description" id="stageWaveDesc">Rapid, jagged, low-voltage rhythms similar to awake thought</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Why Do We Dream? -->
+    <section id="why-we-dream" class="content-section" aria-labelledby="heading-why">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Scientific Theories</span>
+          <h2 id="heading-why" class="section-title">Why Do We Dream?</h2>
+          <p class="section-intro">
+            Why did nature give our sleeping brains the ability to construct rich fictional worlds? Scientists have uncovered several powerful explanations.
+          </p>
+        </header>
+
+        <!-- Crucial Science Disclaimer Banner -->
+        <div class="science-notice" role="note">
+          <div class="notice-badge">Core Scientific Fact</div>
+          <p>
+            <strong>There is no single proven explanation for why we dream.</strong> Dreaming is a complex biological frontier. Most neuroscientists agree that dreams likely serve multiple overlapping functions—or emerge naturally from the brain's essential nightly maintenance.
+          </p>
+        </div>
+
+        <div class="theories-grid">
+          <!-- Theory 1 -->
+          <article class="theory-card">
+            <div class="theory-number">01</div>
+            <h3 class="theory-title">Memory Consolidation &amp; Storage</h3>
+            <p class="theory-desc">
+              During the day, your brain's memory gateway (the <strong>hippocampus</strong>) collects thousands of raw inputs. While you sleep, the brain replays these neural patterns, sorting what matters from what can be safely forgotten.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>Dreams may be conscious glimpses of your brain filing away essential memories into the neocortex for long-term storage.</p>
+            </div>
+          </article>
+
+          <!-- Theory 2 -->
+          <article class="theory-card">
+            <div class="theory-number">02</div>
+            <h3 class="theory-title">Emotional Regulation ("Overnight Therapy")</h3>
+            <p class="theory-desc">
+              During REM sleep, the neurochemical <em>noradrenaline</em> (a key stress hormone) drops to near-zero levels. This allows your brain to reprocess difficult, painful, or traumatic daytime experiences without the physical distress of anxiety.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>Dreams may soften the emotional sting of painful memories, letting you wake up feeling calmer and more resilient.</p>
+            </div>
+          </article>
+
+          <!-- Theory 3 -->
+          <article class="theory-card">
+            <div class="theory-number">03</div>
+            <h3 class="theory-title">Activation-Synthesis Hypothesis</h3>
+            <p class="theory-desc">
+              Pioneered by Harvard psychiatrists J. Allan Hobson and Robert McCarley, this theory proposes that dreams originate from spontaneous electrical impulses generated in the <strong>brainstem</strong> during REM.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>Your creative forebrain struggles to interpret these random neural signals, synthesizing them into a narrative story as best it can.</p>
+            </div>
+          </article>
+
+          <!-- Theory 4 -->
+          <article class="theory-card">
+            <div class="theory-number">04</div>
+            <h3 class="theory-title">Threat &amp; Social Simulation</h3>
+            <p class="theory-desc">
+              From an evolutionary standpoint, early humans faced constant environmental threats. The <em>Threat Simulation Theory</em> suggests dreaming evolved as a biological virtual reality simulator where ancestors could practice surviving dangers.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>In modern life, this simulation often shifts to social scenarios—navigating relationships, exams, confrontations, or public presentations.</p>
+            </div>
+          </article>
+
+          <!-- Theory 5 -->
+          <article class="theory-card">
+            <div class="theory-number">05</div>
+            <h3 class="theory-title">Creative Problem Solving</h3>
+            <p class="theory-desc">
+              Because sleep temporarily loosens the rigid, linear rules enforced by the prefrontal cortex, your brain can link distant ideas that waking logic would overlook.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>History is full of scientific breakthroughs, literature, and inventions sparked by dreams—from the structure of the periodic table to musical melodies.</p>
+            </div>
+          </article>
+
+          <!-- Theory 6 -->
+          <article class="theory-card">
+            <div class="theory-number">06</div>
+            <h3 class="theory-title">Synaptic Homeostasis</h3>
+            <p class="theory-desc">
+              When awake, your brain constantly strengthens synapses to learn new things. If unchecked, this would consume unsustainable energy. Sleep selectively trims unnecessary connections to preserve brain plasticity.
+            </p>
+            <div class="theory-footer">
+              <span class="theory-tag">Key Idea</span>
+              <p>Dreams could be the byproduct of this delicate neural pruning, maintaining balance across your trillions of brain circuits.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Dream Myths and Facts -->
+    <section id="myths-and-facts" class="content-section alt-bg" aria-labelledby="heading-myths">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Evidence vs. Folklore</span>
+          <h2 id="heading-myths" class="section-title">Dream Myths &amp; Facts</h2>
+          <p class="section-intro">
+            Pop culture is full of mysterious claims about dreams. Here is what rigorous sleep science actually says.
+          </p>
+        </header>
+
+        <div class="myths-list">
+          <!-- Myth 1 -->
+          <article class="myth-card">
+            <div class="myth-header">
+              <span class="badge badge-myth">Myth</span>
+              <h3 class="myth-statement">“Dreams reliably predict the future (precognition).”</h3>
+            </div>
+            <div class="myth-body">
+              <span class="badge badge-fact">Scientific Fact</span>
+              <p>
+                There is zero credible scientific evidence that dreams foretell future events. When a dream seems to "come true," it is explained by <strong>probability, coincidence, and confirmation bias</strong>. You experience thousands of dream scenes each year; by sheer statistical chance, a few will coincidentally mirror future waking events. You remember the uncanny hit, but promptly forget the thousands of misses.
+              </p>
+            </div>
+          </article>
+
+          <!-- Myth 2 -->
+          <article class="myth-card">
+            <div class="myth-header">
+              <span class="badge badge-myth">Myth</span>
+              <h3 class="myth-statement">“Every dream symbol has a universal, fixed meaning.”</h3>
+            </div>
+            <div class="myth-body">
+              <span class="badge badge-fact">Scientific Fact</span>
+              <p>
+                Popular "dream dictionary" guides claim that losing teeth always means death, or seeing water always means wealth. Modern neuroscience and clinical psychology find this unfounded. <strong>Dream imagery is intensely personal and idiosyncratic.</strong> The symbols in your dreams reflect your own memories, emotional experiences, cultural background, and daily vocabulary—never a universal codebook.
+              </p>
+            </div>
+          </article>
+
+          <!-- Myth 3 -->
+          <article class="myth-card">
+            <div class="myth-header">
+              <span class="badge badge-myth">Myth</span>
+              <h3 class="myth-statement">“You only dream during REM sleep.”</h3>
+            </div>
+            <div class="myth-body">
+              <span class="badge badge-fact">Scientific Fact</span>
+              <p>
+                While REM sleep produces the most vivid, cinematic, and emotional narratives, <strong>dreaming occurs throughout all sleep stages</strong>. When sleep lab participants are awakened during deep non-REM (NREM) sleep, up to half report ongoing mental experiences. NREM dreams tend to be more conceptual, thought-like, or repetitive rather than visual adventures.
+              </p>
+            </div>
+          </article>
+
+          <!-- Myth 4 -->
+          <article class="myth-card">
+            <div class="myth-header">
+              <span class="badge badge-myth">Myth</span>
+              <h3 class="myth-statement">“Some people never dream at all.”</h3>
+            </div>
+            <div class="myth-body">
+              <span class="badge badge-fact">Scientific Fact</span>
+              <p>
+                Barring rare brain injuries or specific medications, <strong>virtually all humans dream every single night</strong> (typically 4 to 6 times). People who say they "never dream" simply have low dream recall. During sleep, your brain is not focused on committing memories to long-term storage; unless you wake up directly during or immediately after a dream, the fragile memory quickly evaporates.
+              </p>
+            </div>
+          </article>
+
+          <!-- Myth 5 -->
+          <article class="myth-card">
+            <div class="myth-header">
+              <span class="badge badge-myth">Myth</span>
+              <h3 class="myth-statement">“If you die in a dream, you die in real life.”</h3>
+            </div>
+            <div class="myth-body">
+              <span class="badge badge-fact">Scientific Fact</span>
+              <p>
+                This classic urban legend is completely untrue. Millions of people have dreamed of falling, crashing, or dying and woke up perfectly healthy. What really happens: intense, alarming dream imagery triggers a spike of adrenaline and activates the autonomic nervous system, causing an immediate physical awakening before the scenario concludes.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Interactive Feature - Myth or Fact Quiz -->
+    <section id="interactive-quiz" class="content-section" aria-labelledby="heading-quiz">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Interactive Brain Check</span>
+          <h2 id="heading-quiz" class="section-title">Test Your Sleep Knowledge</h2>
+          <p class="section-intro">
+            Can you separate sleep science from midnight folklore? Answer these five quick questions to find out.
+          </p>
+        </header>
+
+        <!-- Dynamic JS Quiz Container -->
+        <div class="quiz-wrapper" id="quizContainer">
+          <!-- Quiz Header -->
+          <div class="quiz-status-bar">
+            <div class="quiz-progress-text" id="quizProgressText" aria-live="polite">Question 1 of 5</div>
+            <div class="quiz-score-badge" id="quizScoreBadge">Score: <span id="quizScore">0</span> / 5</div>
+          </div>
+          
+          <div class="quiz-progress-bar" role="progressbar" id="quizProgressBar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+            <div class="quiz-progress-fill" id="quizProgressFill" style="width: 20%;"></div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="quiz-card" id="quizCard">
+            <div class="quiz-question-container">
+              <h3 class="quiz-question" id="quizQuestion">
+                Loading question...
+              </h3>
+            </div>
+
+            <!-- Choice Buttons -->
+            <div class="quiz-options" id="quizOptions" role="group" aria-label="Answer options">
+              <button type="button" class="btn-quiz btn-choice-myth" id="btnMyth" data-answer="myth">
+                <span class="choice-icon">✕</span>
+                <span>It's a Myth</span>
+              </button>
+              <button type="button" class="btn-quiz btn-choice-fact" id="btnFact" data-answer="fact">
+                <span class="choice-icon">✓</span>
+                <span>It's a Scientific Fact</span>
+              </button>
+            </div>
+
+            <!-- Live Feedback Region for Accessibility -->
+            <div class="quiz-feedback hidden" id="quizFeedback" aria-live="polite">
+              <div class="feedback-badge" id="feedbackBadge">Result</div>
+              <p class="feedback-explanation" id="feedbackText">Explanation text goes here.</p>
+              <button type="button" class="btn btn-primary" id="btnNextQuestion">Next Question →</button>
+            </div>
+          </div>
+
+          <!-- Quiz Completion View (Initially Hidden) -->
+          <div class="quiz-completion hidden" id="quizCompletion" aria-live="polite">
+            <div class="completion-icon" aria-hidden="true">✨</div>
+            <h3 class="completion-title" id="completionTitle">Quiz Complete!</h3>
+            <p class="completion-score-summary" id="completionScoreSummary">
+              You scored 0 out of 5!
+            </p>
+            <p class="completion-message" id="completionMessage">
+              Great effort exploring the science of sleep.
+            </p>
+            <button type="button" class="btn btn-primary" id="btnRestartQuiz">Retake Quiz</button>
+          </div>
+        </div>
+
+        <!-- Progressive Enhancement Fallback (Displayed if JS is disabled) -->
+        <noscript>
+          <div class="no-js-card" role="region" aria-label="Self-Guided Quiz Review">
+            <h3 class="no-js-title">Self-Guided Quiz Review</h3>
+            <p class="no-js-desc">JavaScript is currently disabled in your browser. You can still test your knowledge using this static review:</p>
+            
+            <details class="no-js-item">
+              <summary><strong>1. You can only experience dreams during REM sleep.</strong> (Myth or Fact?)</summary>
+              <div class="no-js-answer">
+                <span class="badge badge-myth">Myth</span>
+                <p>Dreams occur in both REM and non-REM sleep. REM dreams are simply more vivid, emotional, and narrative-driven.</p>
+              </div>
+            </details>
+
+            <details class="no-js-item">
+              <summary><strong>2. During REM sleep, your voluntary muscles are temporarily paralyzed.</strong> (Myth or Fact?)</summary>
+              <div class="no-js-answer">
+                <span class="badge badge-fact">Fact</span>
+                <p>This is called muscle atonia. The brainstem prevents motor neurons from acting out vivid dream sequences.</p>
+              </div>
+            </details>
+
+            <details class="no-js-item">
+              <summary><strong>3. Dreams have universal symbolic meanings in all cultures.</strong> (Myth or Fact?)</summary>
+              <div class="no-js-answer">
+                <span class="badge badge-myth">Myth</span>
+                <p>Dream imagery is personal and idiosyncratic, shaped by your individual memories, culture, and waking thoughts.</p>
+              </div>
+            </details>
+
+            <details class="no-js-item">
+              <summary><strong>4. Sleep plays an active role in consolidating memories and learning.</strong> (Myth or Fact?)</summary>
+              <div class="no-js-answer">
+                <span class="badge badge-fact">Fact</span>
+                <p>The hippocampus and cortex replay daytime memories during sleep to strengthen useful connections.</p>
+              </div>
+            </details>
+
+            <details class="no-js-item">
+              <summary><strong>5. Science has proven one single, definitive reason why humans dream.</strong> (Myth or Fact?)</summary>
+              <div class="no-js-answer">
+                <span class="badge badge-myth">Myth</span>
+                <p>There is no single proven answer. Sleep researchers investigate memory consolidation, emotional therapy, threat rehearsal, and neural housekeeping.</p>
+              </div>
+            </details>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Section 6: Quick Recap -->
+    <section id="takeaways" class="content-section alt-bg" aria-labelledby="heading-recap">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Summary</span>
+          <h2 id="heading-recap" class="section-title">Quick Recap: Key Takeaways</h2>
+          <p class="section-intro">
+            A few core scientific insights to remember the next time you turn out the lights:
+          </p>
+        </header>
+
+        <div class="recap-grid">
+          <div class="recap-card">
+            <div class="recap-num">1</div>
+            <h3 class="recap-title">An Active, Living Brain</h3>
+            <p>Sleep is not a quiet shutdown. Your central nervous system carries out essential biological, chemical, and cognitive housekeeping all night long.</p>
+          </div>
+
+          <div class="recap-card">
+            <div class="recap-num">2</div>
+            <h3 class="recap-title">Dreams Across Both Stages</h3>
+            <p>You dream during both REM and non-REM sleep. REM dreams are immersive and emotional, while non-REM dreams are often conceptual and thought-like.</p>
+          </div>
+
+          <div class="recap-card">
+            <div class="recap-num">3</div>
+            <h3 class="recap-title">Built-In Safety Switch</h3>
+            <p>During REM sleep, <em>muscle atonia</em> temporarily relaxes your voluntary motor system so you don't physically act out your dream adventures.</p>
+          </div>
+
+          <div class="recap-card">
+            <div class="recap-num">4</div>
+            <h3 class="recap-title">Many Theories, No Single Rule</h3>
+            <p>There is no single proven purpose for dreaming. Memory consolidation, emotional calibration, neural pruning, and threat simulation all play vital roles.</p>
+          </div>
+
+          <div class="recap-card">
+            <div class="recap-num">5</div>
+            <h3 class="recap-title">Intensely Personal Meaning</h3>
+            <p>Dream symbols are idiosyncratic to your own life and memories. Science does not support prophetic precognition or universal dream dictionaries.</p>
+          </div>
+
+          <div class="recap-card">
+            <div class="recap-num">6</div>
+            <h3 class="recap-title">Universal Human Experience</h3>
+            <p>Almost everyone dreams multiple times every night. Remembering them depends on how gently and immediately you wake up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Sources & Scientific References -->
+    <section id="sources" class="content-section" aria-labelledby="heading-sources">
+      <div class="content-container">
+        <header class="section-header">
+          <span class="section-label">Evidence Base</span>
+          <h2 id="heading-sources" class="section-title">Reputable Sources &amp; Further Reading</h2>
+          <p class="section-intro">
+            Every statement on this site is rooted in peer-reviewed neuroscience and institutional sleep research. Explore these verified resources:
+          </p>
+        </header>
+
+        <div class="sources-list" role="list">
+          <!-- Source 1 -->
+          <article class="source-item" role="listitem">
+            <div class="source-meta">
+              <span class="source-org">National Institutes of Health (NIH) / NINDS</span>
+              <span class="source-type">Educational Guide</span>
+            </div>
+            <h3 class="source-title">
+              <a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="source-link">
+                <span>Brain Basics: Understanding Sleep</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 3h7v7M13 3L6 10"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="source-desc">
+              Comprehensive reference on sleep architecture, REM vs. NREM stages, circadian pacemakers, and cellular brain health from the National Institute of Neurological Disorders and Stroke.
+            </p>
+          </article>
+
+          <!-- Source 2 -->
+          <article class="source-item" role="listitem">
+            <div class="source-meta">
+              <span class="source-org">American Psychological Association (APA)</span>
+              <span class="source-type">Scientific Overview</span>
+            </div>
+            <h3 class="source-title">
+              <a href="https://www.apa.org/topics/sleep/why-we-dream" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="source-link">
+                <span>Why We Dream: What Sleep Science Tells Us</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 3h7v7M13 3L6 10"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="source-desc">
+              Authoritative overview of psychological and neurological perspectives on dreaming, emotional processing, and the sleep cycle.
+            </p>
+          </article>
+
+          <!-- Source 3 -->
+          <article class="source-item" role="listitem">
+            <div class="source-meta">
+              <span class="source-org">Nature Reviews Neuroscience / PubMed Central</span>
+              <span class="source-type">Peer-Reviewed Paper</span>
+            </div>
+            <h3 class="source-title">
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2821153/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="source-link">
+                <span>REM Sleep and Dreaming: Towards a Theory of Protoconsciousness</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 3h7v7M13 3L6 10"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="source-desc">
+              Landmark paper by J. Allan Hobson (2009) exploring how REM brainstem activations synthesize subjective dream states and support developing consciousness.
+            </p>
+          </article>
+
+          <!-- Source 4 -->
+          <article class="source-item" role="listitem">
+            <div class="source-meta">
+              <span class="source-org">Cleveland Clinic Health Essentials</span>
+              <span class="source-type">Medical Review</span>
+            </div>
+            <h3 class="source-title">
+              <a href="https://health.clevelandclinic.org/dreams-and-dreaming" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="source-link">
+                <span>Dreams and Dreaming: What Happens in Your Sleeping Brain</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 3h7v7M13 3L6 10"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="source-desc">
+              Clinical overview of dream physiology, muscle atonia, sleep onset thoughts, and why science differentiates objective brain activity from symbolic interpretation.
+            </p>
+          </article>
+
+          <!-- Source 5 -->
+          <article class="source-item" role="listitem">
+            <div class="source-meta">
+              <span class="source-org">Harvard Medical School Division of Sleep Medicine</span>
+              <span class="source-type">Academic Resource</span>
+            </div>
+            <h3 class="source-title">
+              <a href="https://sleep.hms.harvard.edu/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="source-link">
+                <span>Division of Sleep Medicine: Sleep, Learning, and Memory</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 3h7v7M13 3L6 10"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="source-desc">
+              Research publications and educational tools exploring how slow waves and sleep spindles support synaptic plasticity, problem-solving, and cognitive stamina.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="content-container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-text">Dreams, Decoded</span>
+          </div>
+          <p class="footer-tagline">A simple guide to what your sleeping brain is doing.</p>
+        </div>
+        <div class="footer-nav">
+          <span class="footer-nav-title">Quick Links</span>
+          <ul class="footer-links">
+            <li><a href="#what-is-a-dream">What Is a Dream?</a></li>
+            <li><a href="#sleep-stages">Sleep Stages</a></li>
+            <li><a href="#why-we-dream">Why We Dream</a></li>
+            <li><a href="#myths-and-facts">Myths &amp; Facts</a></li>
+            <li><a href="#interactive-quiz">Science Quiz</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer" role="note">
+        <p>
+          <strong>Educational Disclaimer:</strong> This website provides general scientific and educational information about sleep and dreaming. It does not provide medical advice, diagnosis, or clinical dream analysis. If you experience persistent sleep disturbances, daytime fatigue, or sleep disorders, consult a licensed healthcare professional.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Dreams, Decoded. Created for science education. Zero trackers, zero external dependencies.</p>
+        <a href="#top" class="back-to-top" id="backToTopBtn" aria-label="Return to top of page">
+          <span>Back to Top ↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
